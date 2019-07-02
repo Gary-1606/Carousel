@@ -1,7 +1,15 @@
 
+
 # Carousel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+
+## Steps to use the repository
+
+Download the repository
+In src/app, run 'npm install' to install the node modules
+Run 'npm start' or 'ng serve' to run the dev server at 'http://localhost:4200/'.
+To change port, run 'ng serve --port '
 
 ## Development server
 
