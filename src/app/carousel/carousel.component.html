@@ -1,1 +1,38 @@
-<p>carousel works!</p>
+<div class="d-flex flex-column flex-grow-1 justify-content-start">
+    <div class="d-flex flex-column flex-grow-1 justify-content-start">
+        <div class="d-flex col-12 col-md-11 mx-auto flex-column custom-container">
+            <h1>Test</h1>
+            <div class="first-carousel">
+                <ngb-carousel *ngIf="bigimages" [showNavigationArrows]="false" [pauseOnHover]="false" [interval]=5000 [showNavigationIndicators]="false">
+                    <ng-template ngbSlide *ngFor="let image of bigimages; let i = index;">
+                        <img class="w-100" id="banner-{{i + 1}}" [src]="image" alt="Random slide">
+                        <div class="carousel-caption">
+                            <h3>Banner-{{i + 1}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="col-12 col-md-7 pl-0 pr-0 pr-sm-3 mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus tellus, tempus quis aliquet sed, consectetur in arcu. Donec et ligula facilisis, ullamcorper ipsum eleifend, sodales tellus. Fusce eleifend risus at arcu porta, id rhoncus neque egestas.
+                    Etiam suscipit egestas lectus at cursus. Sed cursus erat sem, id vulputate metus placerat vitae. Pellentesque elementum sapien ac nibh malesuada, et aliquet purus malesuada. Praesent imperdiet venenatis malesuada. Proin eget ante ullamcorper,
+                    lacinia nulla eget, pharetra erat. Quisque ac dolor id elit vestibulum venenatis. Quisque mollis eget tortor et ornare. Proin sodales faucibus dignissim. Aliquam volutpat nisl velit, ut hendrerit enim sollicitudin nec. Aliquam posuere,
+                    mi sed laoreet faucibus, odio tellus bibendum mi, nec finibus leo dolor vitae felis. In tincidunt bibendum nulla, sit amet ullamcorper orci bibendum ac. Nulla et faucibus enim. Integer sed convallis justo. Nulla ultricies diam quis
+                    odio commodo lobortis. Pellentesque fermentum dolor nunc, eu placerat tortor viverra vel. Morbi placerat porttitor luctus. Phasellus turpis sem, suscipit consequat congue eu, condimentum vel sapien. Nulla porttitor, lorem eget imperdiet
+                    semper, sem erat finibus lectus, non hendrerit mi risus ut tellus. Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pulvinar risus nec lacus tincidunt consectetur. Pellentesque vehicula convallis
+                    placerat. Nam porttitor tortor sed finibus viverra.
+                </div>
+                <div class="second-carousel col-12 col-md-5 p-0 mt-4">
+                    <ngb-carousel *ngIf="smallimages" [showNavigationArrows]="false" [pauseOnHover]="false" [interval]=5000 [showNavigationIndicators]="false">
+                        <ng-template ngbSlide *ngFor="let image of smallimages; let i = index">
+                            <img class="w-100" id="banner-{{i + 1}}" [src]="image" alt="Random slide">
+                            <div class="carousel-caption">
+                                <h3>Banner-{{i + 1}}</h3>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

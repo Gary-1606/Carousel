@@ -1,0 +1,31 @@
+[{
+        "id": "banner1",
+        "imgBig": "https://picsum.photos/1024/200/?random",
+        "imgSmall": "https://picsum.photos/1024/200/?random"
+    },
+    {
+        "id": "banner2",
+        "imgBig": "https://picsum.photos/1024/200/?random",
+        "imgSmall": "https://picsum.photos/1024/200/?random"
+    },
+    {
+        "id": "banner3",
+        "imgBig": "https://picsum.photos/1024/200/?random",
+        "imgSmall": "https://picsum.photos/1024/200/?random"
+    },
+    {
+        "id": "banner4",
+        "imgBig": "https://picsum.photos/1024/200/?random",
+        "imgSmall": "https://picsum.photos/1024/200/?random"
+    },
+    {
+        "id": "banner5",
+        "imgBig": "https://picsum.photos/1024/200/?random",
+        "imgSmall": "https://picsum.photos/1024/200/?random"
+    },
+    {
+        "id": "banner6",
+        "imgBig": "https://picsum.photos/1024/200/?random",
+        "imgSmall": "https://picsum.photos/1024/200/?random"
+    }
+]
