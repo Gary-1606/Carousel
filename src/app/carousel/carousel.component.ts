@@ -12,8 +12,11 @@ export class CarouselComponent implements OnInit {
   carouselimages: any = [];
   @HostBinding('class') classes = 'wrapper px-2 px-md-3 py-4';
 
-  bigimages = [0, 1, 2].map(() => `https://picsum.photos/900/450?random&t=${Math.random()}`);
-  smallimages = [2, 1, 0].map(() => `https://picsum.photos/424/306?random&t=${Math.random()}`);
+  /**
+   * randomising banner
+   */
+  bigimages = [0, 1, 2, 3, 4, 5, 6].map(() => `https://picsum.photos/900/450?random&t=${Math.random()}`);
+  smallimages = [6, 5, 4, 3, 2, 1, 0].map(() => `https://picsum.photos/424/306?random&t=${Math.random()}`);
 
 constructor(private _carouselService: CarouselService) { }
 

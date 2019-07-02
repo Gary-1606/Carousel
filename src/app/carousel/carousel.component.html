@@ -25,9 +25,9 @@
                 <div class="second-carousel col-12 col-md-5 p-0 mt-4">
                     <ngb-carousel *ngIf="smallimages" [showNavigationArrows]="false" [pauseOnHover]="false" [interval]=5000 [showNavigationIndicators]="false">
                         <ng-template ngbSlide *ngFor="let image of smallimages; let i = index">
-                            <img class="w-100" id="banner-{{i + 1}}" [src]="image" alt="Random slide">
+                            <img class="w-100" id="banner-{{6 - i}}" [src]="image" alt="Random slide">
                             <div class="carousel-caption">
-                                <h3>Banner-{{i + 1}}</h3>
+                                <h3>Banner-{{6 - i}}</h3>
                             </div>
                         </ng-template>
                     </ngb-carousel>
